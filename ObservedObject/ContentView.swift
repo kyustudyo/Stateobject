@@ -35,7 +35,7 @@ struct ContentView: View {
 }
 
 struct CountView: View {
-    @ObservedObject var viewModel = CountViewModel()
+    @StateObject var viewModel = CountViewModel()
     init(rootCount:Int){
         self.rootCount = rootCount
         print("init~")
