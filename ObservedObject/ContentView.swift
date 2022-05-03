@@ -32,7 +32,9 @@ struct ContentView: View {
     //State + private ==> (Get into the habit)
     @State private var rootCount: Int = 0
     @State private var update = false
+    @State private var goToSecView = false
     @StateObject var infomation: Information = Information()//because it is not view, it doesn't proceed reinitializing even if 'State' changes.
+    
     
     var body: some View {
         NavigationView{
@@ -52,15 +54,22 @@ struct ContentView: View {
                 NavigationLink(destination: DetailView()){
                     HStack{
                         Image("jj")
+//                            .renderingMode(.original)
                             .resizable()
                             .scaledToFit()
                             .frame(width:30)
                             .clipShape(Circle())
-                            
                         Text("Show Detail View")
-                        
                     }
-                    
+                }
+                
+                //according to the situation, you can go to another view.
+                NavigationLink(isActive: $goToSecView, destination: {Text("second view")}, label: {Text("")})
+                
+                Button("If you make RootCount == 10...") {
+                    if rootCount == 10{
+                        self.goToSecView = true
+                    }
                 }
                 Spacer()
             }
