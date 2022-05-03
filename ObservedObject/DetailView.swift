@@ -16,23 +16,22 @@ struct DetailView : View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea()
+                .opacity(0.3)
                 .overlay(
                     
                                 Text("WWDC Student challenge 에 참여했습니다. \n 쉽지 않더구만요.")
-                                    .fontWeight(.heavy)
-                                    .lineSpacing(10.0)
+                                    .fontWeight(.bold)
+                                    .lineSpacing(25.0)
                                     .foregroundColor(.white)
-                                    .font(.system(.title2, design: .rounded))
                                     .padding(20)
                                     .background(Color.black)
-                                    .cornerRadius(10)
-                                    .opacity(0.4)
-                                    
+                                    .cornerRadius(15)
+                                    .opacity(0.7)
                                     .padding(),
                                 alignment: .center
                             )
         }
-        .navigationTitle(Text("Info"))
+        .navigationTitle(Text("My WWDC challenge"))
         .navigationBarTitleDisplayMode(.inline)
     }
 }

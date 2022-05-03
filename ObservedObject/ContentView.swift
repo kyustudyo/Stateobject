@@ -33,6 +33,8 @@ struct ContentView: View {
     @State private var rootCount: Int = 0
     @State private var update = false
     @State private var goToSecView = false
+    @State private var selection: String?
+    
     @StateObject var infomation: Information = Information()//because it is not view, it doesn't proceed reinitializing even if 'State' changes.
     
     
@@ -40,7 +42,9 @@ struct ContentView: View {
         NavigationView{
             VStack{
                 Spacer()
-                CountView(rootCount: rootCount)//view
+//                CountView(rootCount: rootCount)//view
+                CountView(selection: $selection, rootCount: rootCount)
+                
                 Button(action: {
                     rootCount += 1
                     //Although the color changes, data maintains if it used with StateObject.
@@ -71,6 +75,16 @@ struct ContentView: View {
                         self.goToSecView = true
                     }
                 }
+                NavigationLink(destination: Text("Selection view"), tag: "Normal add tapped", selection: $selection){
+                    Text("")
+                }
+                //
+                Button("If you tapped normal add button.."){
+                    if self.selection == "Normal add" {
+                        selection = "Normal add tapped"
+                    }
+                }
+                
                 Spacer()
             }
             .navigationTitle(Text("Let's study"))
@@ -83,17 +97,21 @@ struct ContentView: View {
 
 struct CountView: View {
     @StateObject var viewModel = CountViewModel()
-    init(rootCount:Int){
-        self.rootCount = rootCount
-        print("init~")
-    }
+    @Binding var selection: String?
+//    init(rootCount:Int){
+//        self.rootCount = rootCount
+//        print("init~")
+//    }
     let rootCount: Int
     
     var body: some View {
         VStack {
             Text("NormalCount: \(viewModel.count)")
             Text("RootCount: \(rootCount)")
-            Button(action: {viewModel.addCount()}, label: {
+            Button(action: {
+                selection = "Normal add"
+                viewModel.addCount()
+            }, label: {
                 Text("Normal add")
             })
         }
