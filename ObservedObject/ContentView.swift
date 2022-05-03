@@ -6,6 +6,7 @@
 //
 
 //Question1_ how to add some words to String in the detail view like hi1, hi2 ... not hi12345...
+//ignore screen shot
 
 import SwiftUI
 
@@ -31,7 +32,7 @@ struct ContentView: View {
     //State + private ==> (Get into the habit)
     @State private var rootCount: Int = 0
     @State private var update = false
-    @ObservedObject var infomation: Information = Information()//because it is not view, it doesn't proceed reinitializing even if 'State' changes.
+    @StateObject var infomation: Information = Information()//because it is not view, it doesn't proceed reinitializing even if 'State' changes.
     
     var body: some View {
         NavigationView{
@@ -49,11 +50,22 @@ struct ContentView: View {
                 })
                 Spacer()
                 NavigationLink(destination: DetailView()){
-                    Text("Show Detail View")
+                    HStack{
+                        Image("jj")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width:30)
+                            .clipShape(Circle())
+                            
+                        Text("Show Detail View")
+                        
+                    }
+                    
                 }
                 Spacer()
             }
             .navigationTitle(Text("Let's study"))
+            .navigationBarTitleDisplayMode(.large)
         }.environmentObject(infomation)
     }
 }
@@ -66,7 +78,6 @@ struct CountView: View {
         self.rootCount = rootCount
         print("init~")
     }
-    
     let rootCount: Int
     
     var body: some View {
@@ -75,7 +86,6 @@ struct CountView: View {
             Text("RootCount: \(rootCount)")
             Button(action: {viewModel.addCount()}, label: {
                 Text("Normal add")
-                   
             })
         }
     }
@@ -86,3 +96,9 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+// property wrapper
+//https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-environmentobject-to-share-data-between-views
+//https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-observedobject-to-manage-state-from-external-objects
+
+//

@@ -11,5 +11,5 @@ class Information: ObservableObject {
     init() {
         print("Info init")
     }
-    @Published var info = "hi"
+    @Published var info: String = "hi" 
 }
