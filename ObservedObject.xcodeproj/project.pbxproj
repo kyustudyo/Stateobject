@@ -28,7 +28,17 @@
 		79E0B32F28201F4F0059EF8F /* 스크린샷 2022-05-02 오후 11.16.42.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E0B32E28201F4F0059EF8F /* 스크린샷 2022-05-02 오후 11.16.42.png */; };
 		79E0B332282021400059EF8F /* 스크린샷 2022-05-02 오후 11.24.55.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E0B331282021400059EF8F /* 스크린샷 2022-05-02 오후 11.24.55.png */; };
 		79E0B334282023A00059EF8F /* 다운로드.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 79E0B333282023A00059EF8F /* 다운로드.jpeg */; };
-		79E0B336282026AD0059EF8F /* sc2.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E0B335282026AD0059EF8F /* sc2.png */; };
+		79E0B3382820D02A0059EF8F /* normalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0B3372820D02A0059EF8F /* normalView.swift */; };
+		79E0B33A2820F7500059EF8F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0B3392820F7500059EF8F /* SwiftUIView.swift */; };
+		79E0B33C2820FBBE0059EF8F /* When navigation view is used on Ipad_ .png in Resources */ = {isa = PBXBuildFile; fileRef = 79E0B33B2820FBBD0059EF8F /* When navigation view is used on Ipad_ .png */; };
+		79E0B33E282113150059EF8F /* 스크린샷 2022-05-03 오후 4.36.46.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E0B33D282113150059EF8F /* 스크린샷 2022-05-03 오후 4.36.46.png */; };
+		79E0B340282158BE0059EF8F /* 스크린샷 2022-05-03 오후 9.33.45.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E0B33F282158BE0059EF8F /* 스크린샷 2022-05-03 오후 9.33.45.png */; };
+		79E0B3422821833E0059EF8F /* 스크린샷 2022-05-04 오전 12.35.12.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E0B3412821833E0059EF8F /* 스크린샷 2022-05-04 오전 12.35.12.png */; };
+		79E0B34428221F760059EF8F /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0B34328221F760059EF8F /* NewView.swift */; };
+		79E0B346282242330059EF8F /* 스크린샷 2022-05-04 오후 2.10.03.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E0B345282242330059EF8F /* 스크린샷 2022-05-04 오후 2.10.03.png */; };
+		79E0B34A282245560059EF8F /* NewView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0B349282245560059EF8F /* NewView2.swift */; };
+		79E0B34C282271FF0059EF8F /* navigationTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0B34B282271FF0059EF8F /* navigationTestView.swift */; };
+		79E0B34F282274080059EF8F /* navView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0B34E282274080059EF8F /* navView1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +83,17 @@
 		79E0B32E28201F4F0059EF8F /* 스크린샷 2022-05-02 오후 11.16.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스크린샷 2022-05-02 오후 11.16.42.png"; sourceTree = "<group>"; };
 		79E0B331282021400059EF8F /* 스크린샷 2022-05-02 오후 11.24.55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스크린샷 2022-05-02 오후 11.24.55.png"; sourceTree = "<group>"; };
 		79E0B333282023A00059EF8F /* 다운로드.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "다운로드.jpeg"; sourceTree = "<group>"; };
-		79E0B335282026AD0059EF8F /* sc2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sc2.png; sourceTree = "<group>"; };
+		79E0B3372820D02A0059EF8F /* normalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = normalView.swift; sourceTree = "<group>"; };
+		79E0B3392820F7500059EF8F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		79E0B33B2820FBBD0059EF8F /* When navigation view is used on Ipad_ .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "When navigation view is used on Ipad_ .png"; sourceTree = "<group>"; };
+		79E0B33D282113150059EF8F /* 스크린샷 2022-05-03 오후 4.36.46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스크린샷 2022-05-03 오후 4.36.46.png"; sourceTree = "<group>"; };
+		79E0B33F282158BE0059EF8F /* 스크린샷 2022-05-03 오후 9.33.45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스크린샷 2022-05-03 오후 9.33.45.png"; sourceTree = "<group>"; };
+		79E0B3412821833E0059EF8F /* 스크린샷 2022-05-04 오전 12.35.12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스크린샷 2022-05-04 오전 12.35.12.png"; sourceTree = "<group>"; };
+		79E0B34328221F760059EF8F /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		79E0B345282242330059EF8F /* 스크린샷 2022-05-04 오후 2.10.03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스크린샷 2022-05-04 오후 2.10.03.png"; sourceTree = "<group>"; };
+		79E0B349282245560059EF8F /* NewView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView2.swift; sourceTree = "<group>"; };
+		79E0B34B282271FF0059EF8F /* navigationTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationTestView.swift; sourceTree = "<group>"; };
+		79E0B34E282274080059EF8F /* navView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navView1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +144,16 @@
 		79E0B2B5281927880059EF8F /* ObservedObject */ = {
 			isa = PBXGroup;
 			children = (
+				79E0B34D282273ED0059EF8F /* navigationViewTest */,
 				79E0B32528200D940059EF8F /* Supporters */,
 				79E0B2B8281927880059EF8F /* ContentView.swift */,
+				79E0B3392820F7500059EF8F /* SwiftUIView.swift */,
 				79E0B32628200DB00059EF8F /* Model.swift */,
 				79E0B31F281FE6580059EF8F /* DetailView.swift */,
 				79E0B321281FE7F20059EF8F /* Information.swift */,
+				79E0B3372820D02A0059EF8F /* normalView.swift */,
+				79E0B34328221F760059EF8F /* NewView.swift */,
+				79E0B349282245560059EF8F /* NewView2.swift */,
 				79E0B316281FDAFA0059EF8F /* Ref */,
 				79E0B2BA2819278A0059EF8F /* Assets.xcassets */,
 				79E0B333282023A00059EF8F /* 다운로드.jpeg */,
@@ -165,8 +190,11 @@
 		79E0B316281FDAFA0059EF8F /* Ref */ = {
 			isa = PBXGroup;
 			children = (
+				79E0B345282242330059EF8F /* 스크린샷 2022-05-04 오후 2.10.03.png */,
+				79E0B33F282158BE0059EF8F /* 스크린샷 2022-05-03 오후 9.33.45.png */,
+				79E0B3412821833E0059EF8F /* 스크린샷 2022-05-04 오전 12.35.12.png */,
 				79E0B331282021400059EF8F /* 스크린샷 2022-05-02 오후 11.24.55.png */,
-				79E0B335282026AD0059EF8F /* sc2.png */,
+				79E0B33D282113150059EF8F /* 스크린샷 2022-05-03 오후 4.36.46.png */,
 				79E0B330282021140059EF8F /* propertyWrapper */,
 			);
 			path = Ref;
@@ -192,8 +220,18 @@
 				79E0B32328200BDB0059EF8F /* 스크린샷 2022-05-02 오후 9.53.40.png */,
 				79E0B3282820119E0059EF8F /* 스크린샷 2022-05-02 오후 10.18.15.png */,
 				79E0B32A282011F30059EF8F /* 스크린샷 2022-05-02 오후 10.19.42.png */,
+				79E0B33B2820FBBD0059EF8F /* When navigation view is used on Ipad_ .png */,
 			);
 			path = propertyWrapper;
+			sourceTree = "<group>";
+		};
+		79E0B34D282273ED0059EF8F /* navigationViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				79E0B34B282271FF0059EF8F /* navigationTestView.swift */,
+				79E0B34E282274080059EF8F /* navView1.swift */,
+			);
+			path = navigationViewTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,16 +338,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E0B3422821833E0059EF8F /* 스크린샷 2022-05-04 오전 12.35.12.png in Resources */,
+				79E0B33C2820FBBE0059EF8F /* When navigation view is used on Ipad_ .png in Resources */,
+				79E0B33E282113150059EF8F /* 스크린샷 2022-05-03 오후 4.36.46.png in Resources */,
+				79E0B340282158BE0059EF8F /* 스크린샷 2022-05-03 오후 9.33.45.png in Resources */,
 				79E0B32F28201F4F0059EF8F /* 스크린샷 2022-05-02 오후 11.16.42.png in Resources */,
 				79E0B32D28201E0E0059EF8F /* 스크린샷 2022-05-02 오후 11.11.19.png in Resources */,
 				79E0B31C281FDB2D0059EF8F /* 스크린샷 2022-05-02 오후 6.18.53.png in Resources */,
 				79E0B31A281FDB180059EF8F /* 스크린샷 2022-05-02 오후 6.09.44.png in Resources */,
-				79E0B336282026AD0059EF8F /* sc2.png in Resources */,
 				79E0B3292820119E0059EF8F /* 스크린샷 2022-05-02 오후 10.18.15.png in Resources */,
 				79E0B32B282011F30059EF8F /* 스크린샷 2022-05-02 오후 10.19.42.png in Resources */,
 				79E0B31E281FE3580059EF8F /* 스크린샷 2022-05-02 오후 7.00.48.png in Resources */,
 				79E0B2BE2819278A0059EF8F /* Preview Assets.xcassets in Resources */,
 				79E0B332282021400059EF8F /* 스크린샷 2022-05-02 오후 11.24.55.png in Resources */,
+				79E0B346282242330059EF8F /* 스크린샷 2022-05-04 오후 2.10.03.png in Resources */,
 				79E0B318281FDB090059EF8F /* 스크린샷 2022-05-02 오후 6.03.29.png in Resources */,
 				79E0B2BB2819278A0059EF8F /* Assets.xcassets in Resources */,
 				79E0B32428200BDB0059EF8F /* 스크린샷 2022-05-02 오후 9.53.40.png in Resources */,
@@ -339,8 +381,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E0B32728200DB00059EF8F /* Model.swift in Sources */,
+				79E0B34C282271FF0059EF8F /* navigationTestView.swift in Sources */,
+				79E0B33A2820F7500059EF8F /* SwiftUIView.swift in Sources */,
 				79E0B2B9281927880059EF8F /* ContentView.swift in Sources */,
 				79E0B320281FE6580059EF8F /* DetailView.swift in Sources */,
+				79E0B3382820D02A0059EF8F /* normalView.swift in Sources */,
+				79E0B34A282245560059EF8F /* NewView2.swift in Sources */,
+				79E0B34428221F760059EF8F /* NewView.swift in Sources */,
+				79E0B34F282274080059EF8F /* navView1.swift in Sources */,
 				79E0B322281FE7F20059EF8F /* Information.swift in Sources */,
 				79E0B2B7281927880059EF8F /* ObservedObjectApp.swift in Sources */,
 			);
