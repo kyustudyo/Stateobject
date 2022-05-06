@@ -16,12 +16,17 @@ struct NewView: View {
 //Only works when there is one navigation per one isActive or tag.
         NavigationView{
         VStack{
+            
+            //go back to before
             Button(action: {isTenCountReady = false}, label: {
                 Text("isTenCountReady = false")
             })
+            
+            //NextView
             Button(action: {nextView = true}) {
                 Text("nextView = true")
             }
+            
             Button(action: {selection = "NewView2"}){
                 Text("Go newVIew2 using tag")
             }
@@ -32,12 +37,13 @@ struct NewView: View {
                 NewView2(isTenCountReady: $isTenCountReady, nextView: $nextView,selection: $selection)
                 
                     .onDisappear {
-                        print("isTen:",isTenCountReady)
+                        print("isTenInNa:",isTenCountReady)
                     }
                     .onAppear {
-                        print("isTen:",isTenCountReady)// Even if it is not commanded for 'isTenCountReady' to be false, it does so automatically.
+                        print("isTenInNa:",isTenCountReady)// Even if it is not commanded for 'isTenCountReady' to be false, it does so automatically.
                     }
             }, label: {Text("")})
+            
             NavigationLink(destination: NewView2(isTenCountReady: $isTenCountReady, nextView: $nextView, selection: $selection), tag: "NewView2", selection: $selection) {
                 Text("")
             }

@@ -63,6 +63,7 @@ struct DetailView : View {
 
 
         }
+        
         //After 2 seconds, it goes back.
 //        .onAppear{
 //            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {

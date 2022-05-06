@@ -91,10 +91,10 @@ struct ContentView: View {
 //                    Text("second view")
                     NewView(isTenCountReady: $isTenCountReady)
                         .onDisappear {
-                            print("isTen:",isTenCountReady)
+                            print("isTenInContentView:",isTenCountReady)
                         }
                         .onAppear {
-                            print("isTen:",isTenCountReady)// Even if it is not commanded for 'isTenCountReady' to be false, it does so automatically.
+                            print("isTenInContentView:",isTenCountReady)// Even if it is not commanded for 'isTenCountReady' to be false, it does so automatically.
                         }
                 }, label: {Text("")})
                 
@@ -160,10 +160,7 @@ struct ContentView: View {
 struct CountView: View {
     @StateObject var viewModel = CountViewModel()
     @Binding var selection: String?
-//    init(rootCount:Int){
-//        self.rootCount = rootCount
-//        print("init~")
-//    }
+
     let rootCount: Int
     
     var body: some View {
