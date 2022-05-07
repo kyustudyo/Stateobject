@@ -31,7 +31,8 @@ struct ContentView: View {
         print("mainView init")
         //Although the properties with State wrapper change, it is only called once unlike ObservedObject.
     }
-    //State + private ==> (Get into the habit)
+    //@State + private ==> (Get into the habit)
+    //Every @State -> Source of truth is defined newly. Views are a function of state.
     @State private var rootCount: Int = 0
     @State private var update = false
     @State private var isTenCountReady = false
