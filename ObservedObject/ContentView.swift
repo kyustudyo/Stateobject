@@ -108,25 +108,27 @@ struct ContentView: View {
                 
                 Group{
                     NavigationLink {
+                        //얘는 그냥
                         navigationTestView(navOk: $navOk)
                     } label: {
                         Text("Direct navigationTestView")
                     }
                     
-                    HStack{
-                        NavigationLink(isActive: $navOk) {
-                            navigationTestView(navOk: $navOk)
-                        } label: {
-                            Text("")
-                        }
-
-                        Button {
-                            navOk = true
-                        } label: {
-                            Text("navok = true")
-                        }
-
+                    
+                    
+                    NavigationLink(isActive: $navOk) {
+                        navigationTestView(navOk: $navOk)
+                    } label: {
+                        Text("")
                     }
+
+                    Button {
+                        navOk = true
+                    } label: {
+                        Text("navok = true")
+                    }
+
+                    
                 }
                 
                
