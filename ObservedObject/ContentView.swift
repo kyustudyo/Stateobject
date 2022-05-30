@@ -69,7 +69,7 @@ struct ContentView: View {
                             .scaledToFit()
                             .frame(width:30)
                             .clipShape(Circle())
-                        Text("Show Detail View")
+                        Text("Navigation Link")
                     }
                 }
                 
@@ -81,7 +81,7 @@ struct ContentView: View {
                     print(selection)
 //                    print(isNormalViewReady)
                 }
-                Button("If you tapped normal add button.."){
+                Button("tap normal add button. binding property is associated."){
                     if self.selection == "Normal add" {
                         selection = "Normal add tapped"
                     }

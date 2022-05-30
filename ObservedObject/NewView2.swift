@@ -22,7 +22,11 @@ struct NewView2: View {
             //Only works when there is one navigation per one isActive. It means that for the below tow codes to work, the previous view has to have a new navigation view.
             //In other words, isActive and selection do not work.
             
-            Button(action: {nextView = false}) {
+            Button(action: {
+                nextView = false
+                print(nextView)
+            }) {
+                
                 Text("nextView = false")
             }
             

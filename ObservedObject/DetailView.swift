@@ -16,29 +16,26 @@ struct DetailView : View {
     
     var body: some View {
         VStack{
-            Image("sc2")
+            Image(systemName: "circle")
                 .resizable()
-                .aspectRatio(contentMode: .fill)
-                .ignoresSafeArea()
+                .aspectRatio(contentMode: .fit)
                 .opacity(0.3)
                 .overlay(
                     VStack{
-                        
-                        Text("저도 WWDC Student challenge 에 참여했습니다. \n 쉽지 않더구만요.")
-                            .fontWeight(.bold)
-                            .lineSpacing(25.0)
-                            .foregroundColor(.white)
-                            .padding(20)
-                            .background(Color.black)
-                            .cornerRadius(15)
-                            .opacity(0.7)
+                        //child부터 바깥쪽으로 물어보면서 layout진행됨.
+                        Text("fggffg")
+                            .foregroundColor(.red)
+                            .padding(.leading,150)
+                            .background(.white)
+                            .frame(width:300,height:200)
+                            .background(Color.cyan)
                             .padding()
-                        
+                            .background(.yellow)
                             Button(action: {
                                 showingSheetView = true
                             }){
                                 HStack{
-                                    Text("Go Sheet")
+                                    Text("sheet, ispresented?")
                                 }
                             }
                             .sheet(isPresented: $showingSheetView) {
@@ -49,7 +46,7 @@ struct DetailView : View {
                                 showingFullView = true
                             }){
                                 HStack{
-                                    Text("Go Full")
+                                    Text("fullscreencover")
                                 }
                             }
                             .fullScreenCover(isPresented: $showingFullView){
@@ -70,7 +67,7 @@ struct DetailView : View {
 //                presentationMode.wrappedValue.dismiss()
 //            }
 //        }
-        .navigationTitle(Text("My WWDC challenge"))
+        .navigationTitle(Text(",,"))
         .navigationBarTitleDisplayMode(.inline)
     }
 }
