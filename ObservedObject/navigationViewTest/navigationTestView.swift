@@ -3,7 +3,7 @@
 //  ObservedObject
 //
 //  Created by Hankyu Lee on 2022/05/04.
-//
+//test
 
 import SwiftUI
 
@@ -15,14 +15,22 @@ struct navigationTestView: View {
             
         VStack{
             Button {
+                navOk = false
+                print(navOk)
+            } label: {
+                Text("navOk = false")
+            }
+
+            Button {
                 nextView = true
             } label: {
                 Text("nextView = true")
             }
+            //새로운 네비게이션뷰가 있어야 들어가서 나올때 동작한다. 들어가는건됨.
             NavigationLink(isActive: $nextView) {
                 navView1(nextView:$nextView,navOk:$navOk)
             } label: {
-                //
+                
             }
 
 

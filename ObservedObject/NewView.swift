@@ -14,7 +14,7 @@ struct NewView: View {
     var body: some View {
         
 //Only works when there is one navigation per one isActive or tag.
-        NavigationView{
+//        NavigationView{
         VStack{
             
             //go back to before
@@ -22,32 +22,37 @@ struct NewView: View {
                 Text("isTenCountReady = false")
             })
             
-            //NextView
+            //isActive
             Button(action: {nextView = true}) {
-                Text("nextView = true")
+                Text("(using isActive) nextView = true")
             }
-            
-            Button(action: {selection = "NewView2"}){
-                Text("Go newVIew2 using tag")
-            }
-            
-            NavigationLink(destination: NewView2(isTenCountReady: $isTenCountReady, nextView: $nextView,selection: $selection), label: {Text("without isActive")})
-            
+            //IsActive
             NavigationLink(isActive: $nextView, destination: {
                 NewView2(isTenCountReady: $isTenCountReady, nextView: $nextView,selection: $selection)
                 
                     .onDisappear {
-                        print("isTenInNa:",isTenCountReady)
+                        print("Nav2OndisappearnextView:",nextView)
+                        print("selection:",selection)
                     }
                     .onAppear {
-                        print("isTenInNa:",isTenCountReady)// Even if it is not commanded for 'isTenCountReady' to be false, it does so automatically.
+                        print("Nav2OnAppearnextView",nextView)// Even if it is not commanded for 'isTenCountReady' to be false, it does so automatically.
+                        print("selection:",selection)
                     }
             }, label: {Text("")})
             
+            //tag
+            Button(action: {selection = "NewView2"}){
+                Text("Go newVIew2 using tag")
+            }
+            //tag
             NavigationLink(destination: NewView2(isTenCountReady: $isTenCountReady, nextView: $nextView, selection: $selection), tag: "NewView2", selection: $selection) {
                 Text("")
             }
+            
+            //without IsActive
+            NavigationLink(destination: NewView2(isTenCountReady: $isTenCountReady, nextView: $nextView,selection: $selection), label: {Text("without isActive")})
+
         }
-    }
+//    }
     }
 }
